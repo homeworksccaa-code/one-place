@@ -15,28 +15,14 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white antialiased selection:bg-white selection:text-black">
       <style>{`
-        :root {
-          --ease: cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
-        html {
-          scroll-behavior: smooth;
-          background: #000;
-        }
-
-        body {
-          background: #000;
-          margin: 0;
-        }
-
-        .op-fade {
-          opacity: 1;
-          transform: translateY(0);
-        }
+        :root { --ease: cubic-bezier(0.16, 1, 0.3, 1); }
+        html { scroll-behavior: smooth; }
+        body { background: #000; }
+        .op-fade { opacity: 0; transform: translateY(24px); transition: opacity 1.1s var(--ease), transform 1.1s var(--ease); }
+        .op-fade.is-in { opacity: 1; transform: translateY(0); }
       `}</style>
 
       <Header />
-
       <main>
         <Hero />
         <LearnEnglish />
@@ -48,8 +34,9 @@ export default function Home() {
         <Classes />
         <About />
       </main>
-
       <Footer />
     </div>
+  );
+}
   );
 }
