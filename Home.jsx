@@ -19,8 +19,15 @@ export default function Home() {
         :root { --ease: cubic-bezier(0.16, 1, 0.3, 1); }
         html { scroll-behavior: smooth; }
         body { background: #000; }
-        .op-fade { opacity: 0; transform: translateY(24px); transition: opacity 1.1s var(--ease), transform 1.1s var(--ease); }
-        .op-fade.is-in { opacity: 1; transform: translateY(0); }
+        .op-fade {
+          opacity: 0;
+          transform: translateY(24px);
+          transition: opacity 1.1s var(--ease), transform 1.1s var(--ease);
+        }
+        .op-fade.is-in {
+          opacity: 1;
+          transform: translateY(0);
+        }
       `}</style>
 
       <Header />
