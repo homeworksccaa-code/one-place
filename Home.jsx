@@ -1,4 +1,3 @@
-```jsx
 import React from "react";
 import Header from "@/components/oneplace/Header";
 import Hero from "@/components/oneplace/Hero";
