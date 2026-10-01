@@ -7,20 +7,14 @@ export default function LearnEnglish() {
   return (
     <section
       id="learn"
-      className="px-6 sm:px-10 lg:px-16 pt-[18vh] pb-[14vh]"
+      className="px-6 sm:px-10 lg:px-16 pt-[4.75rem] sm:pt-[4.75rem] pb-[14vh]"
     >
       <div className="mx-auto max-w-[1600px]">
 
         <Reveal>
-          <p className="text-[11px] sm:text-xs uppercase tracking-[0.28em] text-white/45 font-medium">
-            01 — Aprenda Inglês
-          </p>
-        </Reveal>
-
-        <Reveal delay={100}>
           <h2
-            className="mt-8 sm:mt-12 font-display font-light text-white leading-[1.08] tracking-[-0.02em] max-w-[22ch]"
-            style={{ fontSize: "clamp(1.75rem, 5vw, 4rem)" }}
+            className="mt-8 sm:mt-10 font-display font-light text-white leading-[1.02] tracking-[-0.035em] max-w-[18ch]"
+            style={{ fontSize: "clamp(2.75rem, 5vw, 4rem)" }}
           >
             Ferramentas, aulas e conteúdo para você realmente usar o inglês.
           </h2>
@@ -36,7 +30,7 @@ export default function LearnEnglish() {
           </p>
         </Reveal>
 
-        <div className="mt-16 sm:mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/10 border border-white/10">
+        <div className="mt-24 sm:mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/10 border border-white/10">
           {LEARN_MODULES.map((m, i) => (
             <Reveal key={m.id} delay={i * 70}>
               <ModuleTile module={m} />

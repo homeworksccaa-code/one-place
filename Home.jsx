@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "@/components/oneplace/Header";
-import Hero from "@/components/oneplace/Hero";
 import LearnEnglish from "@/components/oneplace/LearnEnglish";
 import TestSection from "@/components/oneplace/TestSection";
 import Dictionary from "@/components/oneplace/Dictionary";
@@ -31,7 +30,6 @@ export default function Home() {
 
       <Header />
       <main>
-        <Hero />
         <LearnEnglish />
         <TestSection />
         <Dictionary />
